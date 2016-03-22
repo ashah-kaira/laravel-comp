@@ -1,4 +1,6 @@
 <?php
+use Illuminate\Support\Facades\DB;
+
 
 class HomeController extends BaseController {
 
@@ -17,6 +19,8 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+        print_r(DB::select('select * from users'));
+        exit;
 		return View::make('hello');
 	}
 
