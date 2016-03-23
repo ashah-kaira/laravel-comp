@@ -46,6 +46,8 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 |
 */
 
+print_r(App::environment());exit;
+
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
