@@ -15,11 +15,8 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function getShowWelcome()
 	{
-        //print_r('hi');
-        //print_r(DB::select('select * from users'));
-        //exit;
 		return View::make('hello');
 	}
 
